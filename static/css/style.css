@@ -1,0 +1,274 @@
+.navbar {
+    background-color: #45b3c2;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #f5f8fb;
+}
+
+.navbar-nav li {
+    margin-left: 25px;
+}
+
+.navbar-nav li a {
+    color: #f5f8fb;
+}
+
+.current {
+    border-top: 1px solid #45b3c2;
+    position: relative;
+}
+
+.current:after {
+    padding: 0;
+    margin: 0;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #f5f8fb;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.slider-bar {
+    width: 140px !important;
+}
+
+.slider-text {
+    text-align: center;
+    color: #f5f8fb;
+}
+
+.carousel-indicators button {
+    margin-right: 20px !important;
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 150%;
+    left: 0;
+    right: 0;
+}
+
+.back-photo {
+    opacity: 65%;
+    height: 600px;
+}
+
+#glimpse {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#switzerland {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.btn-go {
+    padding: 12px 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #45b3c2;
+    border: 2px solid #45b3c2;
+    transition: color 0.5s, background-color 0.5s;
+    margin-top: 15px;
+}
+
+.btn-go:hover {
+    color: #f5f8fb;
+    background-color: #45b3c2;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f8fb;
+    padding: 30px 60px;
+    border-radius: 61px;
+    margin-bottom: 40px;
+}
+
+.numbers {
+    display: flex;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.stat-card:first-child {
+    margin-left: 0 !important;
+}
+
+.stat-label {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.stat-img {
+    color: #45b3c2;
+    width: 51px !important;
+    height: 51px !important;
+    padding: 10px;
+    border: 1px solid #45b3c2;
+    border-radius: 50%;
+}
+
+.stat-img:hover {
+    color: #45b3c2;
+}
+
+.stat-title {
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.stat-content {
+    color: #45b3c2;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+}
+
+.stat-btn {
+    padding: 12px 30px;
+    background-color: #45b3c2;
+    color: #f5f8fb;
+    border-radius: 25px;
+    border: none;
+}
+
+.country {
+    margin-top: 40px;
+}
+
+.country-img {
+    border-radius: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.main-heading {
+    margin-top: 40px;
+}
+
+.main-heading p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.country-name p {
+    color: gray;
+}
+
+.country-body p {
+    color: gray;
+}
+
+.country-elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-elem span {
+    margin-left: 10px;
+}
+
+.country-elem i {
+    color: gray;
+}
+
+.country-footer {
+    justify-self: flex-end;
+}
+
+.country-direction {
+    color: #45b3c2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.country-direction:hover {
+    color: #45b3c2;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    margin-left: 40px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.gmap_iframe {
+    width: 400px !important;
+    height: 500px !important;
+}
+
+.country-pagination {
+    margin-top: 20px;
+}
+
+.page-item {
+    margin-left: 10px;
+}
+
+.page-item:first-child {
+    margin-left: 0;
+}
+
+.page-item a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #45b3c2;
+    border: solid 1px #45b3c2 !important;
+    border-radius: 50% !important;
+    /* transition: color 0.5s, background-color 0.5s; */
+}
+
+#arrow-left {
+    border: none !important;
+}
+
+#arrow-right {
+    border: none !important;
+}
+
+.active-link a {
+    color: #f5f8fb;
+    background-color: #45b3c2 !important;
+}
+
+/*
+*Uncomment to see the transition but I prefered untransitioned version*/
+/* 
+.active-link a:hover {
+    color: #45b3c2;
+    background-color: #f5f8fb !important;
+} */
