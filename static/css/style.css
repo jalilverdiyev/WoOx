@@ -54,7 +54,8 @@
 }
 
 .back-photo {
-    opacity: 65%;
+    filter: brightness(0.3);
+    opacity: 80%;
     height: 600px;
 }
 
@@ -272,3 +273,38 @@
     color: #45b3c2;
     background-color: #f5f8fb !important;
 } */
+
+.booky {
+    display: flex;
+    justify-content: space-around;
+    background: url(../img/footer-back.jpg), #51b6c5aa;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 75px 0;
+    color: #f5f8fb;
+    margin-top: 60px;
+}
+
+.book-btn {
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #f5f8fb;
+    border-radius: 25px;
+    border: 1px solid #f5f8fb;
+}
+
+footer {
+    padding: 25px 0;
+    background-color: #45b3c2;
+}
+
+.f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #45b3c2;
+    color: #f5f8fb;
+}
