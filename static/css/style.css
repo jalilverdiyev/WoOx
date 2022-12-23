@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
     background-color: #45b3c2;
 }
@@ -168,9 +172,17 @@
     margin-top: 40px;
 }
 
+.main-heading h3 {
+    font-weight: 700;
+}
+
 .main-heading p {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.country-name h4 {
+    font-weight: 700;
 }
 
 .country-name p {
@@ -287,6 +299,11 @@
     margin-top: 60px;
 }
 
+.booky-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .book-btn {
     padding: 12px 30px;
     background-color: transparent;
@@ -307,4 +324,9 @@ footer {
     justify-content: center;
     background-color: #45b3c2;
     color: #f5f8fb;
+}
+
+.f2 p {
+    margin: 0;
+    padding: 0;
 }
