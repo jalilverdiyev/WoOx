@@ -123,7 +123,7 @@
     color: #45b3c2;
     width: 51px !important;
     height: 51px !important;
-    padding: 10px;
+    padding: 11px;
     border: 1px solid #45b3c2;
     border-radius: 50%;
 }
@@ -134,13 +134,12 @@
 
 .stat-title {
     color: grey;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
 }
 
 .stat-content {
     color: #45b3c2;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 18px;
     text-align: left;
 }

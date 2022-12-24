@@ -1,8 +1,15 @@
+const mainCarouselElement = document.querySelector('#mainCarousel');
+const mainCarousel = new bootstrap.Carousel(mainCarouselElement, {
+    interval: 3000,
+    wrap: true
+})
+
 var home = document.getElementById('home');
 var about = document.getElementById('about');
 var deals = document.getElementById('deals');
 var reservations = document.getElementById('reservations');
 var book = document.getElementById('book');
+
 home.addEventListener('click', () => {
     setCurrent('');
 });
