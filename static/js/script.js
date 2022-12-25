@@ -1,9 +1,49 @@
+/**
+ * A script for carousel which adds:
+ * Time interval 
+ * Extra colors
+ * Animation like sliding effect
+ */
 const mainCarouselElement = document.querySelector('#mainCarousel');
-const mainCarousel = new bootstrap.Carousel(mainCarouselElement, {
-    interval: 3000,
-    wrap: true
-})
+const carouselIndicators = mainCarouselElement.querySelectorAll(".carousel-indicators button span");
+let interval;
+const carousel = new bootstrap.Carousel(mainCarouselElement);
 
+window.addEventListener('load', () => {
+    progressCarousel(0);
+});
+
+mainCarouselElement.addEventListener('slide.bs.carousel', (e) => {
+    let index = e.to;
+    progressCarousel(index);
+});
+
+function progressCarousel(carouselIndex) {
+    let sliderTexts = mainCarouselElement.getElementsByClassName('slider-text');
+    sliderTexts[carouselIndex].classList.add('slider-active');
+    for (let j = 0; j < 4; j++) {
+        if (j != carouselIndex) {
+            sliderTexts[j].classList.remove('slider-active');
+        }
+    }
+    let i = 0;
+    for (const indicator of carouselIndicators) {
+        indicator.style.width = 0;
+    }
+    clearInterval(interval);
+    carousel.pause();
+    interval = setInterval(() => {
+        i++;
+        mainCarouselElement.querySelector(".carousel-indicators .active span").style.width = i + '%';
+        if (i == 100)
+            carousel.next();
+    }, 50);
+
+}
+
+/**
+ * A script for navbar which sets the current page
+ */
 var home = document.getElementById('home');
 var about = document.getElementById('about');
 var deals = document.getElementById('deals');

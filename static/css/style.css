@@ -42,12 +42,40 @@
 }
 
 .slider-text {
+    margin-right: 20px;
     text-align: center;
     color: #f5f8fb;
+    cursor: pointer;
+    transition: 0.4s color;
+}
+
+.slider-active {
+    color: #45b3c2;
+}
+
+.slider-text:hover {
+    color: #45b3c2;
 }
 
 .carousel-indicators button {
     margin-right: 20px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 8px;
+    border: none;
+}
+
+.carousel-indicators [data-bs-target] span {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 0;
+    height: 101%;
+    background: #45b3c2;
 }
 
 .banner-title {
@@ -133,7 +161,7 @@
 }
 
 .stat-title {
-    color: grey;
+    color: #adadad;
     text-align: left;
 }
 
@@ -150,6 +178,10 @@
     color: #f5f8fb;
     border-radius: 25px;
     border: none;
+}
+
+#country-container {
+    max-width: 900px;
 }
 
 .country {
@@ -176,6 +208,7 @@
 }
 
 .main-heading p {
+    color: #adadad;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -185,11 +218,11 @@
 }
 
 .country-name p {
-    color: gray;
+    color: #adadad;
 }
 
 .country-body p {
-    color: gray;
+    color: #adadad;
 }
 
 .country-elem {
@@ -200,10 +233,11 @@
 
 .country-elem span {
     margin-left: 10px;
+    color: #adadad;
 }
 
 .country-elem i {
-    color: gray;
+    color: #adadad;
 }
 
 .country-footer {
@@ -254,6 +288,14 @@
     margin-left: 0;
 }
 
+#arrow-left {
+    border: none !important;
+}
+
+#arrow-right {
+    border: none !important;
+}
+
 .page-item a {
     width: 40px;
     height: 40px;
@@ -262,14 +304,6 @@
     border: solid 1px #45b3c2 !important;
     border-radius: 50% !important;
     /* transition: color 0.5s, background-color 0.5s; */
-}
-
-#arrow-left {
-    border: none !important;
-}
-
-#arrow-right {
-    border: none !important;
 }
 
 .active-link a {
@@ -284,6 +318,7 @@
     color: #45b3c2;
     background-color: #f5f8fb !important;
 } */
+
 
 .booky {
     display: flex;
